@@ -1,3 +1,9 @@
+from datetime import datetime
+
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)
 from xml.dom import minidom
 file = minidom.parse('orders.xml')
 AddOrder = file.getElementsByTagName('AddOrder')
@@ -67,5 +73,8 @@ for i in range(len(book3_BUY_price)):
     if(i<len(book3_sell_price)):
         print("             "+str(book3_sell_volume[i])+"@"+str(book3_sell_price[i]))
             
-        
+now = datetime.now()
+
+current_time = now.strftime("%H:%M:%S")
+print("Current Time =", current_time)       
 
